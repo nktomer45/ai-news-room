@@ -5,6 +5,7 @@ const config = {
   mongodbUri: process.env.MONGODB_URI,
   redis: {
     enabled: process.env.REDIS_ENABLED === 'true',
+    url: process.env.REDIS_URL,
     host: process.env.REDIS_HOST || '127.0.0.1',
     port: process.env.REDIS_PORT || 6379,
   },
