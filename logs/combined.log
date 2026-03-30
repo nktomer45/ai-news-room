@@ -6758,3 +6758,7 @@
 {"level":"error","message":"[Firebase] Initialization failed: Failed to parse private key: Error: Invalid PEM formatted message.","service":"ai-newsroom-backend","timestamp":"2026-03-30 23:53:36"}
 {"level":"error","message":"[Firebase] Initialization failed: Failed to parse private key: Error: Invalid PEM formatted message.","service":"ai-newsroom-backend","timestamp":"2026-03-30 23:59:13"}
 {"level":"info","message":"[CRON] ⏸️ Manual Mode active. Automated scheduling paused.","service":"ai-newsroom-backend","timestamp":"2026-03-30 23:59:16"}
+{"level":"error","message":"[Firebase] Initialization failed: Failed to parse private key: Error: Invalid PEM formatted message.","service":"ai-newsroom-backend","timestamp":"2026-03-31 01:22:39"}
+{"level":"info","message":"[CRON] ⏸️ Manual Mode active. Automated scheduling paused.","service":"ai-newsroom-backend","timestamp":"2026-03-31 01:22:41"}
+{"level":"error","message":"[Firebase] Initialization failed: Failed to parse private key: Error: Invalid PEM formatted message.","service":"ai-newsroom-backend","timestamp":"2026-03-31 01:23:06"}
+{"level":"info","message":"[CRON] ⏸️ Manual Mode active. Automated scheduling paused.","service":"ai-newsroom-backend","timestamp":"2026-03-31 01:23:08"}
