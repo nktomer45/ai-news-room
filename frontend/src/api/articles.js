@@ -1,4 +1,5 @@
 import client from './client';
+import config from './../config/config';
 
 export const articleApi = {
   // Stats
@@ -39,7 +40,7 @@ export const pipelineApi = {
   pauseRun: (runId) => client.post(`/pipeline/pause/${runId}`),
   // SSE stream URL (used directly with EventSource)
   streamUrl: () => {
-    const base = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
-    return `${base}/pipeline/stream`;
+    return `${config.apiUrl}/pipeline/stream`;
   },
 };
+
