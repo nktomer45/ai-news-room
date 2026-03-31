@@ -4,4 +4,6 @@ const config = {
   isProd: import.meta.env.PROD,
 };
 
+console.log('Current API URL:', config.apiUrl);
+
 export default config;

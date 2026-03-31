@@ -9,21 +9,21 @@ const pipelineRoutes = require('./pipelineRoutes');
 const authMiddleware = require('../middleware/authMiddleware');
 
 // Global / Common Routes
-router.get('/api/health', (req, res) => {
+router.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok', message: "server is working" });
 });
 
 // Auth Routes
-router.use('/api/auth', authRoutes);
+router.use('/auth', authRoutes);
 
 // Feature Routes
-router.use('/api/categories', categoryRoutes);
+router.use('/categories', categoryRoutes);
 
 // Pipeline (stream is public for SSE; cancel/pause are protected)
-router.use('/api/pipeline', pipelineRoutes);
+router.use('/pipeline', pipelineRoutes);
 
 // Feature Routes (Protected)
-router.use('/api/articles', authMiddleware, articleRoutes);
-router.use('/api/settings', authMiddleware, settingsRoutes);
+router.use('/articles', authMiddleware, articleRoutes);
+router.use('/settings', authMiddleware, settingsRoutes);
 
 module.exports = router;
